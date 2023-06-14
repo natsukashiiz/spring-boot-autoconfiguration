@@ -18,11 +18,11 @@ public class GreeterAutoConfiguration {
     }
 
     @Bean
-    @ConditionalOnMissingBean(GreeterService.class)
+    @ConditionalOnMissingBean(GreeterProperties.class)
     public GreeterService greeterService() {
-        GreeterService greeterService = new GreeterService();
-        greeterService.setName(greeterProperties.getName());
-        greeterService.setIdolGroupName(greeterProperties.getGroupName());
-        return greeterService;
+        return new GreeterService(
+                greeterProperties.getName(),
+                greeterProperties.getGroupName()
+        );
     }
 }
