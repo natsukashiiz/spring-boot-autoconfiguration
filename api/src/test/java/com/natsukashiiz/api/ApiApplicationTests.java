@@ -1,10 +1,10 @@
-package com.natsukashiiz.autoconfiguration;
+package com.natsukashiiz.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootAutoconfigurationApplicationTests {
+class ApiApplicationTests {
 
     @Test
     void contextLoads() {

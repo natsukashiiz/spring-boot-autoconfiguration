@@ -1,13 +1,13 @@
-package com.natsukashiiz.autoconfiguration;
+package com.natsukashiiz.boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootAutoconfigurationApplication {
+public class BootApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootAutoconfigurationApplication.class, args);
+        SpringApplication.run(BootApplication.class, args);
     }
 
 }
